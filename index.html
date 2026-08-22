@@ -1,249 +1,448 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>VoidSkins — Avaliação de Skins CS2</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MineRealm - Servidor Minecraft</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <div class="logo">
-    <span>V</span> VoidSkins
-  </div>
-  
-<nav>BEM VINDO
-  
-  <nav>
-    <a href="#inicio">Início</a>
-    <a href="#skins">Skins</a>
-    <a href="#avaliacoes">Avaliações</a>
-  </nav>
-
-  <button class="steam-btn" onclick="loginSteam()">
-    🎮 Entrar
-  </button>
-</header>
-
-<main>
-
-<section class="hero" id="inicio">
-  <div class="hero-content">
-    <p class="tag">CS2 SKIN DATABASE</p>
-
-    <h1>
-      Descubra mais <span>Skins</span> de
-      <span>qualidade</span> Para sua Conta de respeito.
-    </h1>
-
-    <p class="subtitle">
-      Pesquise skins de Counter-Strike 2, veja avaliações da comunidade
-      e descubra quais são as mais populares.
-    </p>
-
-    <div class="search-box">
-      <input
-        id="searchInput"
-        type="text"
-        placeholder="Pesquisar skin...">
-      <button onclick="searchSkins()">Pesquisar</button>
-    </div>
-  </div>
-</section>
-
-<section class="skins-section" id="skins">
-
-  <div class="section-title">
-    <div>
-      <p class="tag">DATABASE</p>
-      <h2>Skins populares</h2>
-    </div>
-
-    <select id="filter" onchange="filterSkins()">
-      <option value="all">Todas</option>
-      <option value="rifle">Rifles</option>
-      <option value="pistol">Pistolas</option>
-      <option value="knife">Facas</option>
-    </select>
-  </div>
-
-  <div class="skins-grid" id="skinsGrid">
-
-    <article class="skin-card" data-type="rifle">
-      <div class="skin-image red-gradient">
-        AK-47
-      </div>
-
-      <div class="skin-info">
-        <h3>AK-47 | Redline</h3>
-        <p>Rifle · Covert</p>
-
-        <div class="rating">
-          <span>★★★★★</span>
-          <b>9.4</b>
+    <header class="navbar">
+        <div class="logo">
+            <span>◆</span> MineRealm
         </div>
 
-        <div class="price">
-          <span>Preço estimado</span>
-          <strong>US$ 85,00</strong>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#servidor">Servidor</a>
+            <a href="#mundo">Criar Mundo</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <!-- INÍCIO -->
+        <section id="inicio" class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    MINECRAFT JAVA • 1.20.4
+                </div>
+
+                <h1>
+                    Seu mundo.<br>
+                    <span>Suas regras.</span>
+                </h1>
+
+                <p>
+                    Crie e configure seu mundo Minecraft Java
+                    diretamente pelo painel do servidor.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#mundo" class="button primary">
+                        Criar mundo
+                    </a>
+
+                    <a href="#servidor" class="button secondary">
+                        Ver servidor
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="minecraft-card">
+
+                <div class="card-icon">⛏</div>
+
+                <h2>Servidor online</h2>
+
+                <div class="online">
+                    <span></span>
+                    ONLINE
+                </div>
+
+                <p>
+                    Java 1.20.4
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- SERVIDOR -->
+        <section id="servidor" class="section">
+
+            <div class="section-title">
+                <span>01</span>
+
+                <div>
+                    <h2>Servidor</h2>
+                    <p>
+                        Configure as principais características
+                        do seu servidor.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="server-grid">
+
+                <div class="info-card">
+                    <div class="info-icon">⚔</div>
+
+                    <h3>Java Edition</h3>
+
+                    <p>
+                        Compatível com Minecraft Java Edition 1.20.4.
+                    </p>
+                </div>
+
+
+                <div class="info-card">
+                    <div class="info-icon">🌎</div>
+
+                    <h3>Mundo público</h3>
+
+                    <p>
+                        Prepare o servidor para receber jogadores
+                        de qualquer lugar.
+                    </p>
+                </div>
+
+
+                <div class="info-card">
+                    <div class="info-icon">♾</div>
+
+                    <h3>24 horas</h3>
+
+                    <p>
+                        A interface está preparada para mostrar
+                        o servidor continuamente online.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CRIAR MUNDO -->
+        <section id="mundo" class="section world-section">
+
+            <div class="section-title">
+                <span>02</span>
+
+                <div>
+                    <h2>Criar um mundo</h2>
+
+                    <p>
+                        Configure seu novo mundo antes de enviá-lo
+                        para o servidor.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="world-builder">
+
+                <div class="builder-header">
+
+                    <div>
+                        <h3>Configuração do mundo</h3>
+
+                        <p>
+                            Escolha como você quer que o mundo seja criado.
+                        </p>
+                    </div>
+
+                    <div class="world-symbol">
+                        ◈
+                    </div>
+
+                </div>
+
+
+                <form id="worldForm">
+
+                    <div class="form-grid">
+
+                        <div class="form-group">
+
+                            <label for="worldName">
+                                Nome do mundo
+                            </label>
+
+                            <input
+                                type="text"
+                                id="worldName"
+                                placeholder="Meu Mundo"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="seed">
+                                Seed
+                            </label>
+
+                            <input
+                                type="text"
+                                id="seed"
+                                placeholder="Deixe vazio para aleatória"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="gamemode">
+                                Modo de jogo
+                            </label>
+
+                            <select id="gamemode">
+
+                                <option value="survival">
+                                    Sobrevivência
+                                </option>
+
+                                <option value="creative">
+                                    Criativo
+                                </option>
+
+                                <option value="adventure">
+                                    Aventura
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="difficulty">
+                                Dificuldade
+                            </label>
+
+                            <select id="difficulty">
+
+                                <option value="peaceful">
+                                    Pacífico
+                                </option>
+
+                                <option value="easy">
+                                    Fácil
+                                </option>
+
+                                <option value="normal" selected>
+                                    Normal
+                                </option>
+
+                                <option value="hard">
+                                    Difícil
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="players">
+                                Limite de jogadores
+                            </label>
+
+                            <input
+                                type="number"
+                                id="players"
+                                value="20"
+                                min="1"
+                                max="500"
+                            >
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="serverType">
+                                Acesso
+                            </label>
+
+                            <select id="serverType">
+
+                                <option value="premium">
+                                    Apenas contas oficiais
+                                </option>
+
+                                <option value="offline">
+                                    Permitir clientes não-premium
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="options">
+
+                        <label class="check">
+
+                            <input
+                                type="checkbox"
+                                id="structures"
+                                checked
+                            >
+
+                            <span>
+                                Gerar estruturas
+                            </span>
+
+                        </label>
+
+
+                        <label class="check">
+
+                            <input
+                                type="checkbox"
+                                id="cheats"
+                            >
+
+                            <span>
+                                Permitir cheats
+                            </span>
+
+                        </label>
+
+
+                        <label class="check">
+
+                            <input
+                                type="checkbox"
+                                id="pvp"
+                                checked
+                            >
+
+                            <span>
+                                PvP ativado
+                            </span>
+
+                        </label>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="button primary create-button"
+                    >
+                        ✦ Criar configuração do mundo
+                    </button>
+
+                </form>
+
+
+                <div
+                    id="result"
+                    class="result hidden"
+                ></div>
+
+            </div>
+
+        </section>
+
+
+        <!-- COMO FUNCIONA -->
+        <section class="section">
+
+            <div class="section-title">
+
+                <span>03</span>
+
+                <div>
+                    <h2>Como funciona?</h2>
+
+                    <p>
+                        O site será o painel de controle.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+                    <strong>01</strong>
+
+                    <h3>Configure</h3>
+
+                    <p>
+                        Escolha nome, seed, modo, dificuldade
+                        e outras opções.
+                    </p>
+                </div>
+
+
+                <div class="step">
+                    <strong>02</strong>
+
+                    <h3>Crie</h3>
+
+                    <p>
+                        O site envia as configurações para
+                        o servidor.
+                    </p>
+                </div>
+
+
+                <div class="step">
+                    <strong>03</strong>
+
+                    <h3>Jogue</h3>
+
+                    <p>
+                        O servidor Minecraft cria o mundo
+                        e os jogadores entram nele.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="logo">
+            <span>◆</span> MineRealm
         </div>
 
-        <button onclick="rateSkin('AK-47 | Redline')">
-          Avaliar skin
-        </button>
-      </div>
-    </article>
-
-    <article class="skin-card" data-type="rifle">
-      <div class="skin-image blue-gradient">
-        AWP
-      </div>
-
-      <div class="skin-info">
-        <h3>AWP | Asiimov</h3>
-        <p>Rifle · Covert</p>
-
-        <div class="rating">
-          <span>★★★★★</span>
-          <b>9.7</b>
-        </div>
-
-        <div class="price">
-          <span>Preço estimado</span>
-          <strong>US$ 160,00</strong>
-        </div>
-
-        <button onclick="rateSkin('AWP | Asiimov')">
-          Avaliar skin
-        </button>
-      </div>
-    </article>
-
-    <article class="skin-card" data-type="pistol">
-      <div class="skin-image purple-gradient">
-        DEAGLE
-      </div>
-
-      <div class="skin-info">
-        <h3>Desert Eagle | Printstream</h3>
-        <p>Pistola · Covert</p>
-
-        <div class="rating">
-          <span>★★★★★</span>
-          <b>9.1</b>
-        </div>
-
-        <div class="price">
-          <span>Preço estimado</span>
-          <strong>US$ 75,00</strong>
-        </div>
-
-        <button onclick="rateSkin('Desert Eagle | Printstream')">
-          Avaliar skin
-        </button>
-      </div>
-    </article>
-
-    <article class="skin-card" data-type="knife">
-      <div class="skin-image pink-gradient">
-        KNIFE
-      </div>
-
-      <div class="skin-info">
-        <h3>Karambit | Doppler</h3>
-        <p>Faca · Covert</p>
-
-        <div class="rating">
-          <span>★★★★★</span>
-          <b>9.9</b>
-        </div>
-
-        <div class="price">
-          <span>Preço estimado</span>
-          <strong>US$ 1.250,00</strong>
-        </div>
-
-        <button onclick="rateSkin('Karambit | Doppler')">
-          Avaliar skin
-        </button>
-      </div>
-    </article>
-
-  </div>
-</section>
-
-<section class="reviews" id="avaliacoes">
-
-  <div class="section-title">
-    <div>
-      <p class="tag">COMMUNITY</p>
-      <h2>Últimas avaliações</h2>
-    </div>
-  </div>
-
-  <div class="review-grid">
-
-    <div class="review">
-      <div class="avatar">L</div>
-      <div>
-        <h3>Lucas</h3>
-        <span class="stars">★★★★★</span>
         <p>
-          A Redline continua sendo uma das melhores skins
-          para quem quer um visual competitivo.
+            Minecraft Java Server • 1.20.4
         </p>
-      </div>
-    </div>
 
-    <div class="review">
-      <div class="avatar">M</div>
-      <div>
-        <h3>Matheus</h3>
-        <span class="stars">★★★★★</span>
-        <p>
-          AWP Asiimov tem um design muito marcante.
-          Nota 9.7 para mim.
-        </p>
-      </div>
-    </div>
+    </footer>
 
-  </div>
-</section>
 
-</main>
-
-<footer>
-  <p>© 2026 VoidSkins · Projeto independente para fãs de CS2.</p>
-</footer>
-
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <button class="close" onclick="closeModal()">×</button>
-
-    <p class="tag">AVALIAÇÃO</p>
-    <h2 id="modalTitle">Avaliar skin</h2>
-
-    <div class="stars-select">
-      <button onclick="selectRating(1)">★</button>
-      <button onclick="selectRating(2)">★</button>
-      <button onclick="selectRating(3)">★</button>
-      <button onclick="selectRating(4)">★</button>
-      <button onclick="selectRating(5)">★</button>
-    </div>
-
-    <textarea
-      id="comment"
-      placeholder="Escreva sua opinião..."></textarea>
-
-    <button class="submit-rating" onclick="submitRating()">
-      Enviar avaliação
-    </button>
-  </div>
-</div>
-
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
